@@ -12,36 +12,72 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
+            background: linear-gradient(to right, #e3f2fd, #fff);
             color: #333;
         }
 
         header {
-            background: linear-gradient(to right, #0077cc, #005fa3);
+            background: linear-gradient(to right, #6a11cb, #2575fc);
             color: white;
-            padding: 40px 0;
+            padding: 30px 0;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-bottom: 4px solid #ffffff33;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
+            font-size: 2.8rem;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2575fc;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #6a11cb;
         }
 
         main {
-            max-width: 900px;
+            max-width: 960px;
             margin: 40px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        section {
+            margin-bottom: 30px;
             padding: 20px;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #2575fc;
+            background-color: #f9fbfd;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        section:nth-child(even) {
+            border-left-color: #6a11cb;
+            background-color: #f3f1fd;
         }
 
         h2 {
-            margin-top: 20px;
+            margin-bottom: 10px;
             font-size: 1.8rem;
-            color: #005fa3;
+            color: #444;
         }
 
         p {
@@ -53,6 +89,17 @@
         strong {
             color: #222;
         }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: #e3f2fd;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #ccc;
+        }
+
     </style>
 </head>
 <body>
@@ -61,18 +108,28 @@
         <h1>Welcome to My Website</h1>
     </header>
 
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
     <main>
         <section>
             <p>This is a simple webpage hosted using GitHub and Netlify.</p>
         </section>
 
         <section>
-    <h2>About Me</h2>
-    <p>Hi, I’m <strong>Parima Verma</strong>. I’m someone who enjoys exploring life with curiosity and purpose. I have a deep interest in Indian culture, history, geopolitics, and current affairs.</p>
-    <p>I love listening to melodious songs, reading about our heritage, and savoring traditional Indian food. I'm always eager to learn and grow, and I aspire to contribute positively to society in meaningful ways.</p>
-         </section>
-
+            <h2>About Me</h2>
+            <p>Hi, I’m <strong>Parima Verma</strong>. I’m someone who enjoys exploring life with curiosity and purpose. I have a deep interest in Indian culture, history, geopolitics, and current affairs.</p>
+            <p>I love listening to melodious songs, reading about our heritage, and savoring traditional Indian food. I'm always eager to learn and grow, and I aspire to contribute positively to society in meaningful ways.</p>
+        </section>
     </main>
+
+    <footer>
+        &copy; 2025 Parima Verma. All rights reserved.
+    </footer>
 
 </body>
 </html>
